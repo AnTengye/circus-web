@@ -38,7 +38,7 @@ setup(name='circus-web',
           "Development Status :: 3 - Alpha"],
       install_requires=install_requires,
       dependency_links=[
-          'git+ssh://git@github.com/paulocheque/tornadio2.git#egg=tornadIO2-0.0.3',
+          'https://github.com/paulocheque/tornadio2.git#egg=tornadIO2-0.0.3',
       ],
       tests_require=['webtest', 'unittest2'],
       test_suite='circusweb.tests',
