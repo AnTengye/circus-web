@@ -59,8 +59,8 @@ class AsynchronousCircusClient(CircusClient):
                 raise CallError(str(e))
 
         socket = self.context.socket(zmq.DEALER)
-        socket.setsockopt(zmq.IDENTITY, uuid.uuid4().hex)
-        socket.setsockopt(zmq.LINGER, 0)
+        socket.setsockopt_string(zmq.IDENTITY, uuid.uuid4().hex)
+        socket.setsockopt_string(zmq.LINGER, 0)
         get_connection(socket, self.endpoint, self.ssh_server,
                        self.ssh_keyfile)
 
