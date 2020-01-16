@@ -7,7 +7,7 @@ if not hasattr(sys, 'version_info') or sys.version_info < (2, 6, 0, 'final'):
 
 
 install_requires = ['Mako', 'MarkupSafe', 'anyjson', 'six',
-                    'pyzmq', 'circus', 'tornado', 'tornadIO2==0.0.3', 'tomako']
+                    'pyzmq', 'circus', 'tornado', 'https://github.com/paulocheque/tornadio2/archive/master.zip', 'tomako']
 
 try:
     import argparse     # NOQA
