@@ -4,6 +4,6 @@ anyjson
 pyzmq
 circus
 tornado
-https://github.com/paulocheque/tornadio2/archive/master#egg=tornadIO2-0.0.3
+git+https://github.com/paulocheque/tornadio2.git#egg=tornadIO2-0.0.3
 tomako
 six
